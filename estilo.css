@@ -135,10 +135,11 @@ body {
   box-shadow: inset 0 0 0 2px rgba(255,255,255,0.18);
 }
 
-.profile-icon {
-  font-size: 4.6rem;
-  color: #7c9cbc;
-  line-height: 1;
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .bottom-strip {
@@ -247,6 +248,15 @@ body {
   border-radius: 6px;
   font-style: italic;
   color: #444;
+}
+
+.imagen-iwata {
+  flex: 1;
+  height: 220px;
+  width: 150px;
+  background: url('iwata.jpg') center/cover no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .tarjeta {
@@ -375,4 +385,90 @@ tbody tr:nth-child(even) {
 
 .box li {
   margin-bottom: 10px;
+}
+
+.proyectos {
+  background: #f4f6f9;
+  padding: 70px 0;
+  color: #333;
+}
+
+/* GRID */
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* PARTE SUPERIOR */
+.card-top {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+/* GRADIENTES */
+.gradient1 { background: linear-gradient(135deg, #5b6ee1, #7c5fc9); }
+.gradient2 { background: linear-gradient(135deg, #ff7eb3, #ff758c); }
+.gradient3 { background: linear-gradient(135deg, #36d1dc, #5b86e5); }
+.gradient4 { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+.gradient5 { background: linear-gradient(135deg, #f7971e, #ffd200); }
+.gradient6 { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
+
+/* CONTENIDO */
+.card figcaption {
+  padding: 18px;
+}
+
+.card small {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #1f3b63;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #2e6cdf;
+  font-weight: 500;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .grid-proyectos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-proyectos {
+    grid-template-columns: 1fr;
+  }
 }

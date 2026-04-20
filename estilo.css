@@ -198,3 +198,80 @@ body {
     height: 150px;
   }
 }
+
+.sobre-mi {
+  background: #f4f6f9;
+  color: #333;
+  padding: 70px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.titulo-seccion {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #1f3b63;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #6c7a89;
+  margin-bottom: 50px;
+}
+
+.contenido-sobre-mi {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.texto {
+  flex: 2;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.texto p {
+  margin-bottom: 20px;
+}
+
+.cita {
+  background: #e9e4df;
+  border-left: 4px solid #f29a33;
+  padding: 15px;
+  border-radius: 6px;
+  font-style: italic;
+  color: #444;
+}
+
+.tarjeta {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.tarjeta h3 {
+  margin-bottom: 15px;
+  color: #1f3b63;
+}
+
+.tarjeta ul {
+  list-style: none;
+}
+
+.tarjeta li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.tarjeta li:last-child {
+  border-bottom: none;
+}

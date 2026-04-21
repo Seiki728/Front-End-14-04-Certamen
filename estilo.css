@@ -254,7 +254,7 @@ body {
   flex: 1;
   height: 220px;
   width: 150px;
-  background: url('iwata.jpg') center/cover no-repeat;
+  background: url('./assets/iwata.jpg') center/cover no-repeat;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
@@ -407,6 +407,21 @@ tbody tr:nth-child(even) {
   overflow: hidden;
   box-shadow: 0 6px 15px rgba(0,0,0,0.08);
   transition: transform 0.2s ease;
+}
+
+.image-card-gato {
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-card-rpg {
+  height: 70%;
+  object-fit: cover;
+}
+
+.image-card-calculadora {
+  height: 130%;
+  object-fit: cover;
 }
 
 .card:hover {

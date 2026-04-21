@@ -15,10 +15,10 @@
 
     <nav>
       <ul class="nav-links">
-    <a href="#">Sobre mí</a>
-        <a href="#">Habilidades</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contacto</a>
+    <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
       </ul>
     </nav>
   </header>
@@ -35,7 +35,7 @@
 
     <div class="profile-wrapper">
       <div class="profile-circle">
-        <img src="gato sandia.png" alt="Gato Sandia" class="profile-image" />
+        <img src="./assets/gato sandia.png" alt="Gato Sandia" class="profile-image" />
       </div>
     </div>
   </main>
@@ -43,7 +43,7 @@
   <div class="bottom-strip"></div>
 
   <section class="sobre-mi">
-  <div class="container">
+  <div id="sobre-mi" class="container">
 
     <h2 class="titulo-seccion">Sobre Mí</h2>
     <p class="subtitulo">Conóceme un poco más</p>
@@ -59,7 +59,7 @@
         </p>
 
         <p>
-          Actualmente me encuentro <em>aprendiendo HTML, CSS y Python</em>, con el
+          Actualmente me encuentro <em>aprendiendo HTML, CSS, Python, MySQL y MongoDB</em>, con el
           objetivo de convertirme en un programador completo. Me gusta enfrentar desafíos y resolver problemas, lo que me motiva a seguir mejorando mis habilidades cada día.
         </p>
 
@@ -70,7 +70,9 @@
         <div class="cita">
           «En mi tarjeta de presentación, soy un presidente corporativo. En mi mente, soy un desarrollador de juegos. Pero en mi corazón, soy un gamer.» — Satoru Iwata
         </div>
-        <div class="imagen-iwata"></div>
+        <div class="imagen-iwata">
+          <img src="./assets/iwata.jpg" alt="Satoru Iwata" class="imagen-iwata" />
+        </div>
       </article>
 
 
@@ -91,7 +93,7 @@
 </section>
 
 <section class="habilidades">
-  <div class="container">
+  <div id="habilidades" class="container">
 
     <h2 class="titulo-seccion">Habilidades</h2>
     <p class="subtitulo">Tecnologías y competencias</p>
@@ -130,21 +132,23 @@
     <div class="extras">
 
       <div class="box">
-        <h3>Competencias Técnicas</h3>
+        <h3>Habilidades Técnicas</h3>
         <ul>
-          <li>Maquetación responsiva</li>
-          <li>Control de versiones con Git</li>
-          <li>Diseño con Flexbox y Grid</li>
+          <li>Front End: HTML y CSS</li>
+          <li>Programación: Python</li>
+          <li>Base de datos: MySQL y MongoDB</li>
         </ul>
       </div>
 
       <div class="box">
         <h3>Ruta de Aprendizaje</h3>
-        <ol>
+        <ul>
           <li>HTML </li>
           <li>CSS</li>
           <li>Python</li>
-        </ol>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+        </ul>
       </div>
 
     </div>
@@ -152,7 +156,7 @@
 </section>
 
 <section class="proyectos">
-  <div class="container">
+  <div id="proyectos" class="container">
 
     <h2 class="titulo-seccion">Proyectos</h2>
     <p class="subtitulo">Algunos de mis trabajos</p>
@@ -161,62 +165,32 @@
 
       <!-- CARD -->
       <figure class="card">
-        <div class="card-top gradient1">💻</div>
+        <div class="card-top gradient1"> <img src="./assets/RPG Maker MV LOGO.png" alt="Logo RPG Maker MV" class="image-card-rpg"/> </div>
         <figcaption>
-          <small>Proyecto web - Landing page</small>
-          <h3>Landing Page</h3>
-          <p>Página de aterrizaje para producto digital con diseño moderno.</p>
-          <a href="#">Ver repositorio →</a>
+          <small>Proyecto Videojuego - Bound by Resonance</small>
+          <h3>MediaFire</h3>
+          <p>Proyecto de Videojuego hecho en RPG Maker MV.</p>
+          <a href="https://www.mediafire.com/file/028frmzqxe12ycj/Bound_by_Resonance_BUILD_INDEV_6.zip/file">Ver link →</a>
         </figcaption>
       </figure>
 
       <figure class="card">
-        <div class="card-top gradient2">🎨</div>
+        <div class="card-top gradient2"> <img src="./assets/gato sandia.png" alt="Gato Sandia" class="image-card-gato"/> </div>
         <figcaption>
           <small>Proyecto web - Blog personal</small>
           <h3>Blog Personal</h3>
           <p>Blog responsivo con sistema de artículos y categorías.</p>
-          <a href="#">Ver repositorio →</a>
+          <a href="https://github.com/Seiki728/Front-End-14-04-Certamen">Ver repositorio →</a>
         </figcaption>
       </figure>
 
       <figure class="card">
-        <div class="card-top gradient3">🛠️</div>
+        <div class="card-top gradient3"> <img src="./assets/calculadora.png" alt="Calculadora" class="image-card-calculadora"/> </div>
         <figcaption>
-          <small>Proyecto web - Dashboard</small>
-          <h3>Dashboard Admin</h3>
-          <p>Panel de administración con gráficos y tablas de datos.</p>
-          <a href="#">Ver repositorio →</a>
-        </figcaption>
-      </figure>
-
-      <figure class="card">
-        <div class="card-top gradient4">📱</div>
-        <figcaption>
-          <small>Proyecto web - App móvil</small>
-          <h3>App Clima</h3>
-          <p>Aplicación del clima con API externa y diseño responsivo.</p>
-          <a href="#">Ver repositorio →</a>
-        </figcaption>
-      </figure>
-
-      <figure class="card">
-        <div class="card-top gradient5">🚀</div>
-        <figcaption>
-          <small>Proyecto web - E-commerce</small>
-          <h3>Tienda Online</h3>
-          <p>E-commerce básico con catálogo de productos y carrito.</p>
-          <a href="#">Ver repositorio →</a>
-        </figcaption>
-      </figure>
-
-      <figure class="card">
-        <div class="card-top gradient6">📚</div>
-        <figcaption>
-          <small>Proyecto web - Portafolio</small>
-          <h3>Portafolio v1</h3>
-          <p>Primera versión de mi portafolio profesional.</p>
-          <a href="#">Ver repositorio →</a>
+          <small>Proyecto web - Calculadora</small>
+          <h3>Calculadora</h3>
+          <p>Una simple calculadora creada como prueba.</p>
+          <a href="https://github.com/CursosWeb/X-Serv-13.6-Calculadora">Ver repositorio →</a>
         </figcaption>
       </figure>
 

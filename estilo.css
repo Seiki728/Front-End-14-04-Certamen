@@ -442,10 +442,6 @@ tbody tr:nth-child(even) {
 .gradient1 { background: linear-gradient(135deg, #5b6ee1, #7c5fc9); }
 .gradient2 { background: linear-gradient(135deg, #ff7eb3, #ff758c); }
 .gradient3 { background: linear-gradient(135deg, #36d1dc, #5b86e5); }
-.gradient4 { background: linear-gradient(135deg, #43e97b, #38f9d7); }
-.gradient5 { background: linear-gradient(135deg, #f7971e, #ffd200); }
-.gradient6 { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
-
 /* CONTENIDO */
 .card figcaption {
   padding: 18px;
@@ -485,5 +481,143 @@ tbody tr:nth-child(even) {
 @media (max-width: 600px) {
   .grid-proyectos {
     grid-template-columns: 1fr;
+  }
+}
+
+.contacto {
+  background: #f4f6f9;
+  padding: 70px 0;
+  color: #333;
+}
+
+.contenido-contacto {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* FORMULARIO */
+.formulario {
+  flex: 2;
+}
+
+.fila {
+  display: flex;
+  gap: 20px;
+}
+
+.campo {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.campo textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #1f3b63;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #163254;
+}
+
+/* INFO */
+.info-contacto {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.info-contacto h3 {
+  margin-bottom: 15px;
+  color: #1f3b63;
+}
+
+.info-contacto .item {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+/* FOOTER */
+.footer {
+  background: #1f3b63;
+  color: white;
+  padding: 30px 0 10px;
+  margin-top: 40px;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-izq {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-der a {
+  color: white;
+  text-decoration: none;
+  background: rgba(255,255,255,0.1);
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.footer-der a:hover {
+  background: #f29a33;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+  .contenido-contacto {
+    flex-direction: column;
+  }
+
+  .fila {
+    flex-direction: column;
+  }
+
+  .footer-contenido {
+    flex-direction: column;
+    gap: 15px;
   }
 }
